@@ -1,8 +1,33 @@
 /* Add google font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 
-/* public  */
-body{
+/* public */
+body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* colors var */
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+}
+
+/* end public */
+
+
+/* start navbar style */
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+/* end navbar style */
