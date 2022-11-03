@@ -30,4 +30,22 @@ body {
     color: var(--green-color);
 }
 
+.navbar .search{
+    border-left:1px solid var(--green-color);
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded='true']{
+    border-color: var(--green-color);
+}
 /* end navbar style */
