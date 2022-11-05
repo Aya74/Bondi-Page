@@ -12,6 +12,7 @@ body {
     --green-color: #33d1cc;
     --pink-color: #ff3150;
     --yellow-color: #ffc400;
+    --section-color: #eff7fa;
 }
 
 .main-btn {
@@ -24,7 +25,7 @@ body {
     color: var(--yellow-color);
 }
 
-.main-title::after{
+.main-title::after {
     content: '';
     width: 120px;
     height: 2px;
@@ -81,3 +82,28 @@ body {
 }
 
 /* end header section style */
+
+/* start features section style */
+.features .iconHolder {
+    height: 200px;
+}
+
+.features .iconHolder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .iconHolder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .iconHolder .icon {
+    color: var(--green-color);
+}
+
+.features .featContainer h4 {
+    color: var(--yellow-color);
+}
+
+/* end features section style */
