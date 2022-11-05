@@ -126,4 +126,30 @@ body {
 .ourWork ul li:not(.active):hover{
 color: var(--pink-color);
 }
+
+.box{
+    padding: 5px;
+    overflow: hidden;
+}
+
+.ourWork .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1ccc2;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.ourWork .box:hover:before{
+    transform: translateX(0);
+}
+
 /* end our work section */
