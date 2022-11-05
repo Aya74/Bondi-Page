@@ -107,3 +107,23 @@ body {
 }
 
 /* end features section style */
+
+/* start our work section */
+.ourWork{
+    background-color: var(--section-color);
+}
+
+.ourWork ul .active{
+    background-color: var(--pink-color);
+    color: var(--yellow-color);
+}
+
+.ourWork ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.ourWork ul li:not(.active):hover{
+color: var(--pink-color);
+}
+/* end our work section */
