@@ -172,3 +172,11 @@ color: var(--yellow-color);
 .ourTeam .box h4{
     background-color: var(--green-color);
 }
+/* end team section */
+
+/* start project section */
+.project{
+    background-color: var(--dark-color);
+}
+/* end project section */
+
