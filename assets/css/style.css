@@ -107,3 +107,49 @@ body {
 }
 
 /* end features section style */
+
+/* start our work section */
+.ourWork{
+    background-color: var(--section-color);
+}
+
+.ourWork ul .active{
+    background-color: var(--pink-color);
+    color: var(--yellow-color);
+}
+
+.ourWork ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.ourWork ul li:not(.active):hover{
+color: var(--pink-color);
+}
+
+.box{
+    padding: 5px;
+    overflow: hidden;
+}
+
+.ourWork .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1ccc2;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.ourWork .box:hover:before{
+    transform: translateX(0);
+}
+
+/* end our work section */
