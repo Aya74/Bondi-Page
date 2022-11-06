@@ -153,3 +153,9 @@ color: var(--pink-color);
 }
 
 /* end our work section */
+
+/* start stuff section */
+.desc{
+    max-width: 500px;
+}
+/* end stuff section */
