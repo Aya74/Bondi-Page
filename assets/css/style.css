@@ -109,30 +109,30 @@ body {
 /* end features section style */
 
 /* start our work section */
-.ourWork{
+.ourWork {
     background-color: var(--section-color);
 }
 
-.ourWork ul .active{
+.ourWork ul .active {
     background-color: var(--pink-color);
     color: var(--yellow-color);
 }
 
-.ourWork ul li{
+.ourWork ul li {
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
 
-.ourWork ul li:not(.active):hover{
-color: var(--pink-color);
+.ourWork ul li:not(.active):hover {
+    color: var(--pink-color);
 }
 
-.box{
+.box {
     padding: 5px;
     overflow: hidden;
 }
 
-.ourWork .box::before{
+.ourWork .box::before {
     content: attr(data-work);
     position: absolute;
     background-color: #33d1ccc2;
@@ -148,35 +148,98 @@ color: var(--pink-color);
     transform: translateX(calc(-100% - 5px));
 }
 
-.ourWork .box:hover:before{
+.ourWork .box:hover:before {
     transform: translateX(0);
 }
 
 /* end our work section */
 
 /* start stuff section */
-.desc{
+.desc {
     max-width: 500px;
 }
+
 /* end stuff section */
 
 /* start team section */
-.ourTeam{
+.ourTeam {
     background-color: var(--section-color);
 }
 
-.ourTeam h2{
-color: var(--yellow-color);
+.ourTeam h2 {
+    color: var(--yellow-color);
 }
 
-.ourTeam .box h4{
+.ourTeam .box h4 {
     background-color: var(--green-color);
 }
+
 /* end team section */
 
 /* start project section */
-.project{
+.project {
     background-color: var(--dark-color);
 }
+
 /* end project section */
 
+/* start subscribe section  */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+
+.subscribe ::placeholder {
+    color: white;
+}
+
+.subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+/* end subscribe section  */
+
+/* start footer style section */
+.footer {
+    background-color: var(--dark-color);
+}
+
+.footer .copyRight>span {
+    color: var(--green-color);
+}
+
+.footer .copyRight div span {
+    color: var(--yellow-color);
+}
+
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer .facebook {
+    background-color: #1877f2;
+}
+
+.footer .twitter {
+    background-color: #1da1f2;
+}
+
+.footer .youtube {
+    background-color: #ff0000;
+}
+
+.footer .linkedin {
+    background-color: #0077b5;
+}
+
+/* end footer style section */
